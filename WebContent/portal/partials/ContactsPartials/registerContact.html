@@ -1,0 +1,72 @@
+
+<!--Page title-->
+
+
+<head>
+<link href="portal/css/umarCustom.css" rel="stylesheet">
+</head>
+
+<div>
+	<h2>Contact Details</h2>
+</div>
+<div style="width: 400px; margin: auto;">
+
+
+
+	<form id="registerContactForm" method="post"
+		onSubmit="alert('Contact is added sucessfully.');">
+		<fieldset>
+			<legend>Register Contact</legend>
+
+
+
+			<div>
+				<label for="name">Name<span class="required">*</span>
+				</label>
+				<div>
+					<input type="text" id="name" required="required"
+						ng-model="newContact.name">
+				</div>
+			</div>
+
+			<div>
+				<label for="email">Email<span class="required">*</span>
+				</label>
+				<div>
+					<input type="email" id="email" name="email"
+						ng-model="newContact.email" required="required">
+				</div>
+			</div>
+
+			<div>
+				<label for="contactNumber">Contact Number<span
+					class="required">*</span>
+				</label>
+				<div>
+					<input type="text" id="contactNumber" name="contactNumber"
+						ng-model="newContact.contactNumber" required="required">
+				</div>
+			</div>
+
+			<p></p>
+
+
+
+
+			<div>
+				<div>
+					<button type="submit"
+						ng-click=registerContact(newContact.name,newContact.email,newContact.contactNumber)>Submit</button>
+
+
+				</div>
+			</div>
+		</fieldset>
+	</form>
+
+</div>
+
+
+
+
+

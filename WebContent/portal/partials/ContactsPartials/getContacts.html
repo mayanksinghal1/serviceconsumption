@@ -1,0 +1,61 @@
+<head>
+<link href="portal/css/umarCustom.css" rel="stylesheet">
+
+</head>
+
+<div>
+	<div>
+		<button type="submit" ng-click=getContacts()>Get Details</button>
+
+	</div>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<div>
+
+	<table style="width: 100%">
+		<thead>
+		<caption>
+			<b><u></b><font size="60">Contact Details</font>
+		</caption>
+		<br>
+		<tr>
+
+			<th>DasId</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Contact Number</th>
+		</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="contacts in contacts.data">
+
+				<td>{{contacts.dasid}}</td>
+				<td>{{contacts.name}}</td>
+				<td>{{contacts.email}}</td>
+				<td>{{contacts.contactNumber}}</td>
+
+			</tr>
+
+		</tbody>
+
+
+	</table>
+
+</div>
+
+
+
+
+
