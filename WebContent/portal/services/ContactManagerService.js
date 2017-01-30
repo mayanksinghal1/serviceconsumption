@@ -6,7 +6,7 @@ app.factory('ContactManagerService',
 					
 						registerContact : function( contactFormObject) {
 							return $http({
-								url : 'http://server-contactmanager.44fs.preview.openshiftapps.com//registerContact',
+								url : 'http://server-contactmanager1.44fs.preview.openshiftapps.com//registerContact',
 								method : 'POST',
 								header : {
 									accept : 'application/json'
@@ -20,7 +20,7 @@ app.factory('ContactManagerService',
 					
 						getContacts : function() {
 							return $http({
-								url : 'http://server-contactmanager.44fs.preview.openshiftapps.com//getContacts',
+								url : 'http://server-contactmanager1.44fs.preview.openshiftapps.com//getContacts',
 								method : 'GET',
 								header : {
 									accept : 'application/json'
